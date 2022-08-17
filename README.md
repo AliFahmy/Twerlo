@@ -3,17 +3,17 @@
 ## Docker Compose Steps
 
 - Build Server and Client images using :
-- run inside client dir
-### docker build -f Dockerfile -t client .
-- run inside server dir
-### docker build -f Dockerfile -t server .
+run inside client dir
+### `docker build -f Dockerfile -t client .`
+run inside server dir
+### `docker build -f Dockerfile -t server .`
 
-- in the main dir run :
+in the main dir run :
 
-### docker compose up
+### `docker compose up`
 
-- server runs on port 5000 
-- client runs on port 3000
+### Server runs on port 5000 
+### Client runs on port 3000
 
 ## BACKEND (SERVER)
 ### Available Scripts in Server and how to Run
