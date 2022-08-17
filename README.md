@@ -1,8 +1,22 @@
 # Getting Started with English Test
 
+## Docker Compose Steps
+
+- Build Server and Client images using :
+- run inside client dir
+### docker build -f Dockerfile -t client .
+- run inside server dir
+### docker build -f Dockerfile -t server .
+
+- in the main dir run :
+
+### docker compose up
+
+- server runs on port 5000 
+- client runs on port 3000
 
 ## BACKEND (SERVER)
-## Available Scripts in Server and how to Run
+### Available Scripts in Server and how to Run
 
 Before starting the server make sure to install the needed packages using:
 
@@ -31,3 +45,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+
