@@ -1,10 +1,12 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
+import * as cors from 'cors';
 import WordRankingController from './controllers/wordRankingController';
 
 // create express app server instance
 const app = express();
-
+const PORT = 5000;
+app.use(cors());
 // add json body parser for requests
 app.use(bodyParser.json());
 
@@ -15,6 +17,6 @@ const wordController = new WordRankingController();
 app.use(wordController.getRouter());
 
 // listen to server in port 5000
-app.listen(5000, () => {
-  console.log('listen');
+app.listen(PORT, () => {
+  console.log(`Listening on port: ${PORT}`);
 });
